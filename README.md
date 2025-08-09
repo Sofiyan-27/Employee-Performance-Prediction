@@ -1,28 +1,20 @@
-# Employee Performance Prediction
+Employee Performance Prediction
+Employee productivity plays a crucial role in the success of any organization. This project uses Machine Learning to analyze employee-related factors and predict their performance levels. By leveraging historical data, the model identifies patterns and relationships between variables such as working hours, incentives, idle time, and other key metrics, helping organizations make informed decisions to improve workforce efficiency.
 
-## Quickstart
+The system is built with:
 
-1. Create & activate conda env:
-   conda create -n emp_perf python=3.10 -y
-   conda activate emp_perf
+- Python for data processing and model building
 
-2. Install requirements:
-   pip install -r requirements.txt
+- Scikit-learn and XGBoost for training and prediction
 
-3. Place your dataset file (garments_worker_productivity.csv) into `data/`
+- Flask for deploying the model as a web application
 
-4. Train:
-   python model_training.py --data data/garments_worker_productivity.csv --target target
+- An intuitive web interface to input employee details and get instant performance predictions.
 
-   (replace --target with the actual column name of the column you want to predict)
+This application can assist:
 
-5. Run the app:
-   python app.py
+- Managers in identifying employees who may require additional support or training
 
-6. Open http://127.0.0.1:5000
+- HR departments in making data-driven evaluations
 
-## Files
-- model_training.py — trains models + saves the best pipeline to models/gwp.pkl
-- app.py — Flask app that loads saved pipeline and serves UI for prediction
-- templates/ — HTML pages
-- static/style.css — basic styling
+- Organizations in improving overall productivity through actionable insights
