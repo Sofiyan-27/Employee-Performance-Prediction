@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>About</title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <div style="background-image: url('/data/bg1.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+    <!-- Content for this div -->
+  </div>
+    <div class="container">
+      <h2>About this project</h2>
+      <p>This app predicts employee performance using a saved ML pipeline built from your dataset.</p>
+      {% if meta %}
+      <h3>Model info</h3>
+      <p>Target column: {{ meta.target }}</p>
+      <p>Best model: {{ meta.best_model_name }}</p>
+      <pre>{{ meta.training_results }}</pre>
+      {% endif %}
+      <a class="button" href="/">Home</a>
+    </div>
+  </body>
+</html>
