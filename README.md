@@ -1,4 +1,5 @@
 Employee Performance Prediction
+
 Employee productivity plays a crucial role in the success of any organization. This project uses Machine Learning to analyze employee-related factors and predict their performance levels. By leveraging historical data, the model identifies patterns and relationships between variables such as working hours, incentives, idle time, and other key metrics, helping organizations make informed decisions to improve workforce efficiency.
 
 The system is built with:
